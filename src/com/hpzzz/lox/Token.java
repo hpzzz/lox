@@ -1,4 +1,4 @@
-package com.karolharasim.lox;
+package com.hpzzz.lox;
 
 public class Token {
     final TokenType type;

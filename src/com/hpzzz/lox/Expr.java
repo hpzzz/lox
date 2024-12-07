@@ -1,4 +1,4 @@
-package com.karolharasim.lox;
+package com.hpzzz.lox;
 
 abstract class Expr {
   interface Visitor<R> {

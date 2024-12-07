@@ -1,4 +1,4 @@
-package com.karolharasim.lox;
+package com.hpzzz.lox;
 
 import java.io.*;
 import java.nio.charset.Charset;
