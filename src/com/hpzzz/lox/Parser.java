@@ -30,6 +30,11 @@ public class Parser {
         Expr expr = ternary();
         while (match(COMMA)) {
             Token coma = previous();
+            if (expr == null) {
+                error(coma, "Comma operator ',' has no left-hand operand.");
+                ternary();
+                continue;
+            }
             Expr right = ternary();
             expr = new Expr.Binary(expr, coma, right);
         }
@@ -51,6 +56,11 @@ public class Parser {
         Expr expr = comparison();
         while (match(EQUAL_EQUAL, BANG_EQUAL)) {
             Token operator = previous();
+            if (expr == null) {
+                error(operator, "Binary operator '" + operator.lexeme + "' has no left-hand operand.");
+                comparison();
+                continue;
+            }
             Expr right = comparison();
             expr = new Expr.Binary(expr, operator, right);
         }
@@ -94,6 +104,11 @@ public class Parser {
         Expr expr = term();
         while (match(GREATER, GREATER_EQUAL, LESS, LESS_EQUAL)) {
             Token operator = previous();
+            if (expr == null) {
+                error(operator, "Binary operator '" + operator.lexeme + "' has no left-hand operand.");
+                term();
+                continue;
+            }
             Expr right = term();
             expr = new Expr.Binary(expr, operator, right);
         }
@@ -104,6 +119,11 @@ public class Parser {
         Expr expr = factor();
         while (match(PLUS, MINUS)) {
             Token operator = previous();
+            if (expr == null) {
+                error(operator, "Binary operator '" + operator.lexeme + "' has no left-hand operand.");
+                factor();
+                continue;
+            }
             Expr right = factor();
             expr = new Expr.Binary(expr, operator, right);
         }
@@ -114,6 +134,11 @@ public class Parser {
         Expr expr = unary();
         while (match(SLASH, STAR)) {
             Token operator = previous();
+            if (expr == null) {
+                error(operator, "Binary operator '" + operator.lexeme + "' has no left-hand operand.");
+                unary();
+                continue;
+            }
             Expr right = unary();
             expr = new Expr.Binary(expr, operator, right);
         }
@@ -126,7 +151,6 @@ public class Parser {
             Expr right = unary();
             return new Expr.Unary(operator, right);
         }
-
         return primary();
     }
 
