@@ -22,7 +22,29 @@ public class Parser {
     }
 
     private Expr expression() {
-        return equality();
+        return comma();
+
+    }
+
+    private Expr comma() {
+        Expr expr = ternary();
+        while (match(COMMA)) {
+            Token coma = previous();
+            Expr right = ternary();
+            expr = new Expr.Binary(expr, coma, right);
+        }
+        return expr;
+    }
+
+    private Expr ternary() {
+        Expr expr = equality();
+        if (match(QUESTION)) {
+            Expr thenBranch = expression();
+            consume(COLON, "Expect ':' after expression in ternary operator");
+            Expr elseBranch = ternary();
+            expr = new Expr.Ternary(expr, thenBranch, elseBranch);
+        }
+        return expr;
     }
 
     private Expr equality() {
