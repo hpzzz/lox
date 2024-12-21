@@ -45,7 +45,7 @@ public class Parser {
         Expr expr = equality();
         if (match(QUESTION)) {
             Expr thenBranch = expression();
-            if (!match(COLON)) {
+            if (!check(COLON)) {
                 error(peek(), "Expected ':' after the '?' in a ternary expression.");
                 return expr; // Recover by returning what we have so far
             }
