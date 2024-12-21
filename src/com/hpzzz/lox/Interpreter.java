@@ -92,7 +92,7 @@ public class Interpreter implements Expr.Visitor<Object> {
         Object right = evaluate(expr.right);
         switch (expr.operator.type) {
             case MINUS:
-                checkRightOperand(expr.operator, expr.right);
+                checkRightOperand(expr.operator, right);
                 return -(double)right;
             case BANG:
                 return !isTruthy(right);
