@@ -1,5 +1,7 @@
 package com.hpzzz.lox;
 
+import java.util.List;
+
 abstract class Expr {
   interface Visitor<R> {
     R visitBinaryExpr(Binary expr);
@@ -7,6 +9,7 @@ abstract class Expr {
     R visitLiteralExpr(Literal expr);
     R visitTernaryExpr(Ternary expr);
     R visitUnaryExpr(Unary expr);
+    R visitVariableExpr(Variable expr);
   }
   static class Binary extends Expr {
     Binary(Expr left, Token operator, Expr right) {
@@ -77,6 +80,18 @@ abstract class Expr {
 
     final Token operator;
     final Expr right;
+  }
+  static class Variable extends Expr {
+    Variable(Token name) {
+      this.name = name;
+    }
+
+    @Override
+    <R> R accept(Visitor<R> visitor) {
+      return visitor.visitVariableExpr(this);
+    }
+
+    final Token name;
   }
 
   abstract <R> R accept(Visitor<R> visitor);
