@@ -19,6 +19,10 @@ public class GenerateAst {
                 "Ternary  : Expr condition, Expr thenBranch, Expr elseBranch",
                 "Unary    : Token operator, Expr right"
         ));
+        defineAst(outputDir, "Stmt", Arrays.asList(
+                "Expression : Expr expression",
+                "Print      : Expr expression"
+        ));
     }
 
     private static void defineAst(
@@ -27,7 +31,7 @@ public class GenerateAst {
         String path = outputDir + "/" + baseName + ".java";
         PrintWriter writer = new PrintWriter(path, "UTF-8");
 
-        writer.println("package com..lox;");
+        writer.println("package com.hpzzz.lox;");
         writer.println();
         writer.println("import java.util.List;");
         writer.println();
