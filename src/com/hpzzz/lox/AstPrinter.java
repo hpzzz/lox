@@ -28,6 +28,11 @@ public class AstPrinter  implements Expr.Visitor<String> {
     }
 
     @Override
+    public String visitLogicalExpr(Expr.Logical expr) {
+        return "";
+    }
+
+    @Override
     public String visitTernaryExpr(Expr.Ternary expr) {
         return parenthesize("ternary", expr.condition, expr.thenBranch, expr.elseBranch);
     }

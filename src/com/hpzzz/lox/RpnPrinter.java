@@ -28,6 +28,11 @@ public class RpnPrinter implements Expr.Visitor<String> {
     }
 
     @Override
+    public String visitLogicalExpr(Expr.Logical expr) {
+        return "";
+    }
+
+    @Override
     public String visitTernaryExpr(Expr.Ternary expr) {
         return "";
     }
