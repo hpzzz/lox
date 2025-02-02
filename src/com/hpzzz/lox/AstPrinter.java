@@ -48,6 +48,11 @@ public class AstPrinter  implements Expr.Visitor<String> {
     }
 
     @Override
+    public String visitThisExpr(Expr.This expr) {
+        return "";
+    }
+
+    @Override
     public String visitSetExpr(Expr.Set expr) {
         return "";
     }
