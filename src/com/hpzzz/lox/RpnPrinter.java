@@ -23,6 +23,11 @@ public class RpnPrinter implements Expr.Visitor<String> {
     }
 
     @Override
+    public String visitGetExpr(Expr.Get expr) {
+        return "";
+    }
+
+    @Override
     public String visitGroupingExpr(Expr.Grouping expr) {
         return expr.expression.accept(this);
     }
@@ -39,6 +44,11 @@ public class RpnPrinter implements Expr.Visitor<String> {
 
     @Override
     public String visitTernaryExpr(Expr.Ternary expr) {
+        return "";
+    }
+
+    @Override
+    public String visitSetExpr(Expr.Set expr) {
         return "";
     }
 

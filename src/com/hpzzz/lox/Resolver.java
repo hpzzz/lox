@@ -25,6 +25,17 @@ public class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void>{
         endScope();
         return null;
     }
+    @Override
+    public Void visitGetExpr(Expr.Get expr) {
+        resolve(expr.object);
+        return null;
+    }
+    @Override
+    public Void visitClassStmt(Stmt.Class stmt) {
+        declare(stmt.name);
+        define(stmt.name);
+        return null;
+    }
 
     @Override
     public Void visitVarStmt(Stmt.Var stmt) {
@@ -141,6 +152,13 @@ public class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void>{
         resolve(expr.condition);
         resolve(expr.elseBranch);
         resolve(expr.thenBranch);
+        return null;
+    }
+
+    @Override
+    public Void visitSetExpr(Expr.Set expr) {
+        resolve(expr.value);
+        resolve(expr.object);
         return null;
     }
 
