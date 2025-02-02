@@ -58,6 +58,11 @@ public class RpnPrinter implements Expr.Visitor<String> {
     }
 
     @Override
+    public String visitSuperExpr(Expr.Super expr) {
+        return "";
+    }
+
+    @Override
     public String visitUnaryExpr(Expr.Unary expr) {
         return expr.operator.toString() + expr.right.accept(this);
     }
