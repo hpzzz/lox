@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f20b426f-73ba-49db-a4b1-f6a5cd1e464a" name="Changes" comment="add inheritance">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox.xcodeproj/project.xcworkspace/xcuserdata/haka.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox.xcodeproj/xcuserdata/haka.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/chunk.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/chunk.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/debug.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/debug.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/memory.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/memory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/value.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clox/clox/value.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scopes" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/scopes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/AstPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/AstPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Expr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Lox.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Lox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/LoxCallable.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/LoxCallable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/LoxClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/LoxClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/LoxFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/LoxFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/LoxInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/LoxInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Resolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Resolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Return.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Return.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/RpnPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/RpnPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/RuntimeError.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/RuntimeError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Stmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/lox/TokenType.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/lox/TokenType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hpzzz/tool/GenerateAst.java" beforeDir="false" afterPath="$PROJECT_DIR$/jlox/src/com/hpzzz/tool/GenerateAst.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2rB98mqYTlCuxhF6v4Aer8dLecx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GenerateAst.executor": "Run",
+    "Application.Lox.executor": "Run",
+    "Application.run file.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.hpzzz.lox" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/jlox" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Lox">
+    <configuration name="GenerateAst" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.hpzzz.tool.GenerateAst" />
+      <module name="lox" />
+      <option name="PROGRAM_PARAMETERS" value="./src/com/hpzzz/lox" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lox" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.hpzzz.lox.Lox" />
+      <module name="lox" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jlox" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run file" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.hpzzz.lox.Lox" />
+      <module name="lox" />
+      <option name="PROGRAM_PARAMETERS" value="scopes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jlox" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Lox" />
+      <item itemvalue="Application.run file" />
+      <item itemvalue="Application.GenerateAst" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f20b426f-73ba-49db-a4b1-f6a5cd1e464a" name="Changes" comment="" />
+      <created>1736021443761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736021443761</updated>
+    </task>
+    <task id="LOCAL-00001" summary="while loops">
+      <option name="closed" value="true" />
+      <created>1737231569597</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737231569597</updated>
+    </task>
+    <task id="LOCAL-00002" summary="for loop as sugared while loop">
+      <option name="closed" value="true" />
+      <created>1737232972716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737232972716</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add function calls">
+      <option name="closed" value="true" />
+      <created>1737301303809</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737301303809</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add functions">
+      <option name="closed" value="true" />
+      <created>1737311364476</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737311364476</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add class instances with properties">
+      <option name="closed" value="true" />
+      <created>1738507809223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738507809223</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add constructors, this and initializers for classes">
+      <option name="closed" value="true" />
+      <created>1738511940262</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738511940262</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add inheritance">
+      <option name="closed" value="true" />
+      <created>1738522194390</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738522194390</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="while loops" />
+    <MESSAGE value="for loop as sugared while loop" />
+    <MESSAGE value="add function calls" />
+    <MESSAGE value="add functions" />
+    <MESSAGE value="add class instances with properties" />
+    <MESSAGE value="add constructors, this and initializers for classes" />
+    <MESSAGE value="add inheritance" />
+    <option name="LAST_COMMIT_MESSAGE" value="add inheritance" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Interpreter.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Interpreter.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Interpreter.java</url>
+          <line>326</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jlox/src/com/hpzzz/lox/Interpreter.java</url>
+          <line>253</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
